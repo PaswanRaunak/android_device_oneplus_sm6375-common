@@ -64,8 +64,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
-# HIDL
+# HIDL & VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    hardware/lineage/interfaces/compatibility_matrices/compatibility_matrix.lineage.xml \
     hardware/oplus/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
